@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-color: rgb(207, 194, 194);
+    --header-color: rgb(210, 105, 30);
+    --titles-color: rgb(110, 13, 13);
+    --text-color: rgb(32, 31, 31);
+
+    --titles-font: 'Courier New', Courier, monospace;
+    --text-font:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: var(--body-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--header-color);
+}
+
+header>img {
+    width: 3rem;
+    filter: inherit;
+}
+
+header>nav>ul {
+    display: flex;
+    flex-direction: row;
+}
+
+header>nav>a {
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+h1, h2{
+    font-family:var(--titles-font);
+    color: var(--titles-color);
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+a, p, ul, li {
+    font-family:var(--text-font);
+    color: var(--text-color);
+    margin: 0.5rem 1rem;
+}
+
+p {
+    line-height: 1.5;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.skills>article {
+    width: 10rem;
+    height:12rem;
+    background-color: var(--header-color);
+    border: solid 0.1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    color: var(--titles-color);
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.projects>article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects>article>img {
+    width: 10rem;
+    margin-top: 0.5rem;
+}
+
+footer {
+    background-color: var(--header-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
