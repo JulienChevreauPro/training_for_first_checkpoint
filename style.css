@@ -103,7 +103,14 @@ footer {
 }
 
 @media screen and (min-width: 992px) {
-           
+     
+    header {
+        height: 5rem;
+    }
+
+    header>nav>a {
+        font-size: 1rem;
+    }
     .skills {
         flex-direction: row;
         justify-content: space-evenly;
@@ -145,7 +152,6 @@ footer {
     .projects>article:nth-child(8){
         grid-column:4/5;
         grid-row: 3/4;
-    }
-   
+    }  
 }
     
